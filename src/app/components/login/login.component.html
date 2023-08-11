@@ -1,0 +1,26 @@
+<div class="container-fluid d-flex justify-content-center align-items-center">
+  <form class="col-12 col-sm-6 col-xl-3 p-3">
+    <h3 class="pt-1 pb-3">LOGIN</h3>
+    <div class="mb-3">
+      <label for="username" class="form-label">Username:</label>
+      <input
+        type="text"
+        class="form-control"
+        name="username"
+        [(ngModel)]="userName"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="password" class="form-label">Password:</label>
+      <input
+        type="password"
+        class="form-control"
+        name="password"
+        [(ngModel)]="password"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="onSubmit()">
+      Submit
+    </button>
+  </form>
+</div>
